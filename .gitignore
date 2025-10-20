@@ -1,0 +1,196 @@
+# Создано https://www.toptal.com/developers/gitignore/api/python,visualstudiocode
+# Редактировать по адресу https://www.toptal.com/developers/gitignore?templates=python,visualstudiocode
+
+### Питон ###
+# Байт-скомпилированные / оптимизированные / DLL-файлы
+__pycache__/
+*.py[код]
+*$py.класс
+
+
+# Расширения C
+*.так
+
+# Распространение/упаковка
+.Python
+строить/
+развиваются-яйца/
+дист/
+загрузки/
+яйца/
+.яйца/
+библиотека/
+lib64/
+части/
+sdist/
+вар/
+колеса/
+поделиться/python-wheels/
+*.egg-info/
+.installed.cfg
+*.яйцо
+МАНИФЕСТ
+
+# PyInstaller
+# Обычно эти файлы пишутся скриптом Python из шаблона
+# до того, как PyInstaller соберет exe-файл, чтобы внедрить в него дату и другую информацию.
+*.манифест
+*.spec
+
+# Журналы установщика
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Отчеты о модульном тестировании/покрытии
+htmlcov/
+.tox/
+.nox/
+.покрытие
+.покрытие.*
+.кэш
+ностесты.xml
+покрытие.xml
+*.крышка
+*.py,обложка
+.гипотеза/
+.pytest_cache/
+крышка/
+
+# Переводы
+*.mo
+*.горшок
+
+# Материалы Django:
+*.бревно
+local_settings.py
+db.sqlite3
+db.sqlite3-журнал
+
+# Материалы для Flask:
+пример/
+.webassets-кэш
+
+# Скрапбукинг:
+.скрепи
+
+# Документация Sphinx
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+цель/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+профиль_по умолчанию/
+ipython_config.py
+
+# pyenv
+# Для библиотеки или пакета вы можете игнорировать эти файлы, так как код
+# предназначены для работы в нескольких средах; в противном случае проверьте их в:
+# .python-версия
+
+# pipenv
+# Согласно pypa/pipenv#598, рекомендуется включить Pipfile.lock в контроль версий.
+# Однако в случае совместной работы, если имеются платформенно-специфичные зависимости или зависимости
+# не имея кроссплатформенной поддержки, pipenv может установить зависимости, которые не работают, или не
+# установить все необходимые зависимости.
+#Pipfile.lock
+
+# поэзия
+# Подобно Pipfile.lock, обычно рекомендуется включить poetry.lock в систему контроля версий.
+# Это особенно рекомендуется для бинарных пакетов, чтобы гарантировать воспроизводимость, и более
+# обычно игнорируется для библиотек.
+# https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#поэзия.замок
+
+# пдм
+# Подобно Pipfile.lock, обычно рекомендуется включить pdm.lock в систему управления версиями.
+#pdm.lock
+# pdm хранит конфигурации всего проекта в файле .pdm.toml, но рекомендуется не включать его
+# в системе контроля версий.
+# https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; используется, например, github.com/David-OConnor/pyflow и github.com/pdm-project/pdm
+__pypackages__/
+
+# Сельдерей
+celerybeat-schedule
+celerybeat.pid
+
+# Файлы, проанализированные SageMath
+*.sage.py
+
+# Окружения
+.env
+.venv
+env/
+venv/
+ОКРУЖАЮЩАЯ СРЕДА/
+env.bak/
+venv.bak/
+
+# Настройки проекта Spyder
+.spyderproject
+.spyproject
+
+# Настройки проекта веревки
+.ropeproject
+
+# документация mkdocs
+/сайт
+
+# мойпи
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Проверка типа Pyre
+.pyre/
+
+# статический анализатор типов pytype
+.pytype/
+
+# Отладочные символы Cython
+cython_debug/
+
+# PyCharm
+# Шаблон, специфичный для JetBrains, хранится в отдельном файле JetBrains.gitignore, который может
+# можно найти по адресу https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+# и может быть добавлен в глобальный gitignore или объединен с этим файлом. Для более эффективного
+# вариант (не рекомендуется) вы можете раскомментировать следующее, чтобы игнорировать всю папку idea.
+#.идея/
+
+### Патч Python ###
+# Локальный файл конфигурации Poetry - https://python-poetry.org/docs/configuration/#local-configuration
+поэзия.томл
+
+# ерш
+.ruff_cache/
+
+# Файлы конфигурации LSP
+pyrightconfig.json
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Локальная история для Visual Studio Code
+.история/
+
+# Встроенные расширения Visual Studio Code
+*.vsix
+
+### Патч VisualStudioCode ###
+# Игнорировать всю локальную историю файлов
+.история
+.ионид
+
+# Конец https://www.toptal.com/developers/gitignore/api/python,visualstudiocode
