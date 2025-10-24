@@ -56,10 +56,18 @@ def main(page: ft.Page):
         main_db.update_task(task_id, completed=int(is_completed))
         load_task()
 
+    def clear_completed(_):
+        # Get all completed tasks and delete them one by one using existing delete_task
+        completed_tasks = main_db.get_tasks('completed')
+        for task_id, _, _ in completed_tasks:
+            main_db.delete_task(task_id)
+        load_task()
+
     filter_buttons = ft.Row([
         ft.ElevatedButton('Все задачи', on_click=lambda e: set_filter(filter_value='all')),
         ft.ElevatedButton('К выполнения', on_click=lambda e: set_filter(filter_value='uncompleted')),
-        ft.ElevatedButton('Выполнено ✅', on_click=lambda e: set_filter(filter_value='completed'))
+        ft.ElevatedButton('Выполнено ✅', on_click=lambda e: set_filter(filter_value='completed')),
+        ft.ElevatedButton('Очистить выполненные', on_click=clear_completed)
     ], alignment=ft.MainAxisAlignment.SPACE_EVENLY)
 
     page.add(ft.Row([task_input, add_button]), filter_buttons, task_list)
